@@ -10,7 +10,6 @@ import { LabtestsComponent } from './labtests/labtests.component';
 import { ComplaintsComponent } from './complaints/complaints.component';
 import { MaterialModule } from '../materials/materials.module';
 import { MenuOutlineComponent } from './menu-outline/menu-outline.component';
-import { HomeBoxComponent } from './home/home-box/home-box.component';
 import { MedicationBoxComponent } from './medication/medication-box/medication-box.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -20,7 +19,6 @@ import { AppointmentComponent } from './appointment/appointment.component';
 import { AppointdialogComponent } from './medication/appointdialog/appointdialog.component';
 import { ViewappointComponent } from './medication/viewappoint/viewappoint.component';
 import { ViewappointBoxComponent } from './medication/viewappoint-box/viewappoint-box.component';
-import { DetailsComponent } from './home/details/details.component';
 import { PageComponent } from './home/page/page.component';
 import { LabsComponent } from './labtests/labs/labs.component';
 import { TestsComponent } from './labtests/tests/tests.component';
@@ -45,7 +43,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     LabtestsComponent,
     ComplaintsComponent,
     MenuOutlineComponent,
-    HomeBoxComponent,
     MedicationBoxComponent,
     AppointmentComponent,
     CityPipe,
@@ -53,7 +50,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppointdialogComponent,
     ViewappointComponent,
     ViewappointBoxComponent,
-    DetailsComponent,
     PageComponent,
     LabsComponent,
     TestsComponent,
