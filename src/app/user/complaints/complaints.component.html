@@ -1,0 +1,43 @@
+<mat-card-header>
+  <div mat-card-avatar class="example-header-image"></div>
+  <mat-card-title>Complaint Box</mat-card-title>
+  <mat-card-subtitle>Raise get Solved</mat-card-subtitle>
+</mat-card-header>
+<div id="form"><h1 >Raise Your Complaints Here</h1>
+  <div style="overflow: hidden;">
+      <div class="formbox">
+          <h5>First Name</h5>
+          <input type="text" [(ngModel)]="fname">*
+      </div>
+      <div class="formbox">
+          <h5>Email</h5>
+          <input type="email" [(ngModel)]="email">*
+      </div>
+      <div class="formbox">
+          <h5>Message</h5>
+          <textarea [(ngModel)]="message"></textarea>*
+      </div>
+  </div>
+  <div class="alert alert-info" *ngIf="errors.length>0">
+      <ul >
+          <li *ngFor="let x of errors">{{x}}</li>
+      </ul>
+  </div>
+  <!-- <form [formGroup]="complaintForm">
+    <div class="formbox">
+      <h5>First Name *</h5>
+      <input type="text" formControlName="name" name="name" class="form-control">   
+      <div *ngIf="(submitted || complaintForm.controls['name'].touched) && complaintForm.controls['name'].errors">
+        <span class="text-danger">* Required field</span>
+      </div>   
+  </div>
+  <div class="formbox">
+    <h5>Email *</h5>
+    <input type="email" formControlName="email" class="form-control">
+    <div *ngIf="(submitted || complaintForm.controls['email'].touched) && complaintForm.controls['email'].errors">
+      <span class="text-danger">* Required field</span>
+    </div>   
+</div>
+</form> -->
+  <div style="margin:30px;"><button class="btn btn-secondary" (click)="submit()">submit</button></div>
+ </div>

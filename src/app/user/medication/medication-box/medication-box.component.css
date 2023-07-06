@@ -1,0 +1,10 @@
+.card{
+  background-color: skyblue;
+  width: 150px;
+  height: 200px;
+  margin-bottom: 8px;
+  float:left;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px gray;
+  margin: 30px;
+}

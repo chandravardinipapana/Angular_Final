@@ -1,0 +1,20 @@
+.card{
+  background-color: whitesmoke;
+  width: 200px;
+  height: 230px;
+  margin-bottom: 8px;
+  float:left;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px gray;
+  margin: 30px;
+}
+.example-header-image {
+  background-image: url("http://localhost/hospital1.jpg");
+  background-size: cover;
+}
+.card img {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

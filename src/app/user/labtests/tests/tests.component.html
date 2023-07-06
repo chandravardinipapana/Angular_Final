@@ -1,0 +1,13 @@
+<mat-card class="test">
+  <button mat-raised-button color="primary" style="width:200px;position:relative;left:500px;" (click)="openDialog2()">Book Now</button>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{test.testname}}</mat-card-title>
+  </mat-card-header>
+  <mat-grid-list cols="2" rowHeight="5:1">
+    <mat-grid-tile>{{test.test1}}</mat-grid-tile>
+    <mat-grid-tile>{{test.test2}}</mat-grid-tile>
+    <mat-grid-tile>{{test.test3}}</mat-grid-tile>
+    <mat-grid-tile>{{test.test4}}</mat-grid-tile>
+  </mat-grid-list>
+</mat-card>

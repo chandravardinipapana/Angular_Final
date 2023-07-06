@@ -1,0 +1,370 @@
+{
+  "register": [],
+  "users": [
+    {
+      "email": "user123@gmail.com",
+      "password": "$2a$10$Auj6EGd4JZ9w5SC.nnoMXOy6n06C/gPCCHkCGuQmAj3lVhvHJYRim",
+      "username": " user1",
+      "type": "user",
+      "id": 1
+    },
+    {
+      "email": "admin123@gmail.com",
+      "password": "$2a$10$SLR1AVyDmrq9OZAYSoWwfOJKVP97MhVtCROwJP0.tSMm.m3NoSw5a",
+      "username": "admin1",
+      "type": "admin",
+      "id": 2
+    }
+  ],
+  "medicines": [
+    {
+      "id": 1,
+      "medicinename": "Covid Essentials",
+      "image": "medicine1.jpg"
+    },
+    {
+      "id": 2,
+      "medicinename": "Skin Care",
+      "image": "medicine2.jpg"
+    },
+    {
+      "id": 3,
+      "medicinename": "Vitamins and Minerals",
+      "image": "medicine3.jpg"
+    },
+    {
+      "id": 4,
+      "medicinename": "Sexual Wellness",
+      "image": "medicine4.jpg"
+    },
+    {
+      "id": 5,
+      "medicinename": "Health Food and Drinks",
+      "image": "medicine5.jpg"
+    },
+    {
+      "id": 6,
+      "medicinename": "Baby Care",
+      "image": "medicine6.jpg"
+    },
+    {
+      "id": 7,
+      "medicinename": "Pain Relief",
+      "image": "medicine7.jpg"
+    },
+    {
+      "id": 8,
+      "medicinename": "Diabetic Care",
+      "image": "medicine8.jpg"
+    },
+    {
+      "id": 9,
+      "medicinename": "Protein",
+      "image": "medicine9.jpg"
+    }
+  ],
+  "complaints": [
+    {
+      "id": 97361,
+      "fname": "chandra vardhini",
+      "email": "chandra123@gmail.com",
+      "message": "Products delivery is slow"
+    }
+  ],
+  "appointments": [
+    {
+      "id": 25413,
+      "fname": "chandr",
+      "age": 23,
+      "mobile": 9898989898,
+      "email": "chandra12@gmail.com",
+      "date": "2023-07-27T18:30:00.000Z",
+      "city": "Chennai",
+      "message": "heart issues"
+    }
+  ],
+  "places": [
+    {
+      "city": "Ahmedabad",
+      "state": "Gujarat"
+    },
+    {
+      "city": "Chennai",
+      "state": "TamilNadu"
+    },
+    {
+      "city": "Trichy",
+      "state": "TamilNadu"
+    },
+    {
+      "city": "Coimbatore",
+      "state": "TamilNadu"
+    },
+    {
+      "city": "Selam",
+      "state": "TamilNadu"
+    },
+    {
+      "city": "Hyderabad",
+      "state": "Telangana"
+    },
+    {
+      "city": "Warangal",
+      "state": "Telangana"
+    },
+    {
+      "city": "Delhi",
+      "state": "Delhi"
+    },
+    {
+      "city": "Srinagar",
+      "state": "Kashmir"
+    },
+    {
+      "city": "Amritsar",
+      "state": "Punjab"
+    },
+    {
+      "city": "Chandigarh",
+      "state": "Punjab"
+    },
+    {
+      "city": "Gurgoan",
+      "state": "Haryana"
+    },
+    {
+      "city": "Lucknow",
+      "state": "Uttar Pradesh"
+    },
+    {
+      "city": "Varanasi",
+      "state": "Uttar Pradesh"
+    },
+    {
+      "city": "Kanpur",
+      "state": "Uttar Pradesh"
+    },
+    {
+      "city": "Noida",
+      "state": "Uttar Pradesh"
+    },
+    {
+      "city": "Jaipur",
+      "state": "Rajastan"
+    },
+    {
+      "city": "Meerut",
+      "state": "Rajastan"
+    },
+    {
+      "city": "Mumbai",
+      "state": "Maharashtra"
+    },
+    {
+      "city": "Pune",
+      "state": "Maharashtra"
+    }
+  ],
+  "places1": [
+    {
+      "state": "Andhra Pradesh"
+    }
+  ],
+  "presciptions": [
+    {
+      "id": 97665,
+      "fname": "chandr",
+      "email": "chandra12@gmail.com",
+      "age": 23,
+      "message": "consult"
+    }
+  ],
+  "specializations": [
+    {
+      "names": "Anesthesiologist"
+    },
+    {
+      "names": "Cardiologist"
+    },
+    {
+      "names": "Dentist"
+    },
+    {
+      "names": "Dermatologist"
+    },
+    {
+      "names": "Endocrinologist"
+    },
+    {
+      "names": "Family Medicine"
+    },
+    {
+      "names": "Gastroenterologist"
+    },
+    {
+      "names": "Infectious Disease"
+    },
+    {
+      "names": "Internal Medicine"
+    },
+    {
+      "names": "Neurologist"
+    },
+    {
+      "names": "Nephrologist"
+    },
+    {
+      "names": "Oncologist"
+    },
+    {
+      "names": "Ophthalmologist"
+    },
+    {
+      "names": "Otolaryngologist"
+    },
+    {
+      "names": "Pulmonologist"
+    },
+    {
+      "names": "Psychiatrist"
+    },
+    {
+      "names": "Radiologist"
+    },
+    {
+      "names": "Physical Executive"
+    }
+  ],
+  "tests": [
+    {
+      "testname": "Lipid Profile Test",
+      "test1": "Ldl Cholesterol Test",
+      "test2": "Hdl Cholesterol Test",
+      "test3": "vldl Cholesterol Test",
+      "test4": "Total Cholesterol Test"
+    },
+    {
+      "testname": "Blood Sugar Test",
+      "test1": "Hba1C Test",
+      "test2": "Fasting Blood Sugar Test",
+      "test3": "Random Blood Sugar Test",
+      "test4": "Creatinine Test"
+    },
+    {
+      "testname": "Thyroid Test",
+      "test1": "TSH Test",
+      "test2": "T3 Test",
+      "test3": "T4 Test",
+      "test4": "FreeT4 Test "
+    },
+    {
+      "testname": "Pregnancy Test",
+      "test1": "Afp Test",
+      "test2": "Glucose Tolerance Test",
+      "test3": "Double Marker Test",
+      "test4": "Beta HCG"
+    }
+  ],
+  "labreports": [
+    {
+      "id": 1869,
+      "fname": "sasi priya",
+      "age": 23,
+      "date": "2023-07-06T18:30:00.000Z",
+      "gender": "Female",
+      "mobile": 9898989898,
+      "email": "sasi123@gmail.com",
+      "address": "sgvk",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": 602100,
+      "test": "Lipid Profile Test"
+    }
+  ],
+  "states": [
+    {
+      "state": "Andhra Pradesh"
+    },
+    {
+      "state": "Arunachal Pradesh"
+    },
+    {
+      "state": "Assam"
+    },
+    {
+      "state": "Bihar"
+    },
+    {
+      "state": "Chhattisgarh"
+    },
+    {
+      "state": "Goa"
+    },
+    {
+      "state": "Gujarat"
+    },
+    {
+      "state": "Haryana"
+    },
+    {
+      "state": "Himachal Pradesh"
+    },
+    {
+      "state": "Jharkhand"
+    },
+    {
+      "state": "Karnataka"
+    },
+    {
+      "state": "Kerala"
+    },
+    {
+      "state": "Madhya Pradesh"
+    },
+    {
+      "state": "Maharashtra"
+    },
+    {
+      "state": "Manipur"
+    },
+    {
+      "state": "Meghalaya"
+    },
+    {
+      "state": "Mizoram"
+    },
+    {
+      "state": "Nagaland"
+    },
+    {
+      "state": "Odisha"
+    },
+    {
+      "state": "Punjab"
+    },
+    {
+      "state": "Rajasthan"
+    },
+    {
+      "state": "Sikkim"
+    },
+    {
+      "state": "Tamil Nadu"
+    },
+    {
+      "state": "Telangana"
+    },
+    {
+      "state": "Tripura"
+    },
+    {
+      "state": "Uttar Pradesh"
+    },
+    {
+      "state": "Uttarakhand"
+    },
+    {
+      "state": "West Bengal"
+    }
+  ]
+}

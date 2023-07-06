@@ -1,0 +1,63 @@
+.example-header-image {
+  background-image: url("http://localhost/labs1.jpg");
+  background-size: cover;
+}
+.form-container {
+  overflow-y: scroll;
+  max-height: 500px;
+}
+.booktest {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  font-family: Arial, sans-serif;
+}
+
+.formbox {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.formbox h5 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+  color: #fff;
+}
+
+.mat-option {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.mat-autocomplete-panel {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.mat-option:hover {
+  background-color: #e5e5e5;
+}

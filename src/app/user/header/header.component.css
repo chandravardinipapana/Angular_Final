@@ -1,0 +1,12 @@
+.menu-outline{
+  color: aqua;
+  background-color: lightgrey;
+}
+button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}

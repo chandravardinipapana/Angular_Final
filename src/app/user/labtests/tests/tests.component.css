@@ -1,0 +1,7 @@
+ .example-header-image{
+  background-image: url("http://localhost/labs1.jpg");
+  background-size: cover;
+ }
+ mat-grid-tile {
+  background: lightblue;
+}

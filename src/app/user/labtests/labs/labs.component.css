@@ -1,0 +1,8 @@
+.example-header-image {
+  background-image: url("http://localhost/labs.jpg");
+  background-size: cover;
+}
+h2{
+  text-align: center;
+  text-decoration: aqua;
+}

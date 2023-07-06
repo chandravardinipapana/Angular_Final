@@ -1,0 +1,45 @@
+<h1>Patient Treatment</h1>
+<div class="container">
+<mat-card class="card"> 
+  <mat-card-header>
+  <div mat-card-avatar class="example-header-image"></div>
+  <mat-card-title>Patient Details</mat-card-title>
+</mat-card-header>
+<form>
+  <mat-form-field class="example-chip-list" appearance="fill">
+    <mat-label>Treatment</mat-label>
+    <mat-chip-grid #chipGrid aria-label="Fruit selection">
+      <mat-chip-row *ngFor="let fruit of fruits" (removed)="remove(fruit)">
+        {{fruit}}
+        <button matChipRemove [attr.aria-label]="'remove ' + fruit">
+          <mat-icon>cancel</mat-icon>
+        </button>
+      </mat-chip-row>
+    </mat-chip-grid>
+    <input placeholder="Add Type..." #fruitInput [formControl]="fruitCtrl"
+      [matChipInputFor]="chipGrid" [matAutocomplete]="auto"
+      [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+      (matChipInputTokenEnd)="add($event)"/>
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+      <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
+        {{fruit}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+
+<mat-card-content>
+  <strong>Appoint id:</strong> {{patient.id}}<br>
+ <strong>Patient Name:</strong>{{patient.fname}}<br>
+ <strong>Age:</strong>{{patient.age}}<br>
+<strong>Mobile:</strong>{{patient.mobile}}<br>
+  <strong>Email:</strong>{{patient.email}}<br>
+  <strong>Appoint Date:</strong>{{patient.date}}<br>
+  <strong>City:</strong>{{patient.city}}<br>
+  <strong>HealthIssue:</strong>{{patient.message}}
+</mat-card-content>
+</mat-card>
+<div class="form">
+<app-prescription></app-prescription>
+</div>
+</div>

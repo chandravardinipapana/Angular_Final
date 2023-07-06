@@ -1,0 +1,188 @@
+<section style="background-color: blue;">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col">
+        <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">User</a></li>
+            <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <img src="http://localhost/{{doctor.image}}" alt="avatar"
+              class="rounded-circle img-fluid" style="width: 150px;">
+            <h5 class="my-3">{{doctor.name}}</h5>
+            <p class="text-muted mb-1">{{doctor.specialization}}</p>
+            <p class="text-muted mb-4">{{details.address}}</p>
+            <div class="d-flex justify-content-center mb-2">
+              <button type="button" class="btn btn-primary">Follow</button>
+              <button type="button" class="btn btn-outline-primary ms-1">Message</button>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-4 mb-lg-0">
+          <div class="card-body p-0">
+            <ul class="list-group list-group-flush rounded-3">
+              <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                <i class="fas fa-globe fa-lg text-warning"></i>
+                <p class="mb-0">https://mdbootstrap.com</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                <p class="mb-0">https://github.com/login</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
+                <p class="mb-0">https://twitter.com/i/flow/login</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                <p class="mb-0">https://www.instagram.com/accounts/login/</p>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                <p class="mb-0">https://www.facebook.com/login/</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{details.name}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Email</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{details.email}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Mobile</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{details.mobile}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Address</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{details.address}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4 mb-md-0">
+              <div class="card-body">
+                <p class="mb-4"><span class="text-primary font-italic me-1">Operations</span>Operations Status
+                </p>
+                <p class="mb-1" style="font-size: .77rem;">Patient Check-in</p>
+                <div class="progress rounded" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" [style.width]="details.patientcheckin + '%'" [attr.aria-valuenow]="details.patientcheckin"
+                  [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+                  </div>
+                  {{details.patientcheckin}}
+                </div>
+                <p class="mt-4 mb-1" style="font-size: .77rem;">Medical history</p>
+                <div class="progress rounded" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" [style.width]="details.medicalhistory + '%'" [attr.aria-valuenow]="details.medicalhistory"
+                  [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+                  </div>
+                  {{details.medicalhistory}}
+                </div>
+                <p class="mt-4 mb-1" style="font-size: .77rem;">Treatment Plan</p>
+                <div class="progress rounded" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" [style.width]="details.treatmentplan + '%'" [attr.aria-valuenow]="details.treatmentplan"
+                  [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+                  </div>
+                  {{details.treatmentplan}}
+                </div>
+                <p class="mt-4 mb-1" style="font-size: .77rem;">Reserch and publication</p>
+                <div class="progress rounded" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" [style.width]="details.research + '%'" [attr.aria-valuenow]="details.research"
+                  [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+                  </div>
+                  {{details.research}}
+                </div>
+                <p class="mt-4 mb-1" style="font-size: .77rem;">Patient reviews and rating</p>
+                <div class="progress rounded" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" [style.width]="details.patientreviews + '%'" [attr.aria-valuenow]="details.patientreviews"
+                  [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+                  </div>
+                  {{details.patientreviews}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-4 mb-md-0">
+              <div class="card-body">
+                <p class="mb-4"><span class="text-primary font-italic me-1">Operations</span> Operation Status
+                </p>
+                <p class="mb-1" style="font-size: .77rem;">No of Operations</p>
+                <div class="progress rounded" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" [style.width]="details.noofoperations + '%'" [attr.aria-valuenow]="details.noofoperations"
+                  [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+                  </div>
+                  {{details.noofoperations}}
+                </div>
+                <p class="mt-4 mb-1" style="font-size: .77rem;">Feedbacks</p>
+                <div class="progress rounded" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" [style.width]="details.feedbacks + '%'" [attr.aria-valuenow]="details.feedbacks"
+                  [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+                  </div>
+                  {{details.feedbacks}}
+                </div>
+                <p class="mt-4 mb-1" style="font-size: .77rem;">Success</p>
+                <div class="progress rounded" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" [style.width]="details.success + '%'" [attr.aria-valuenow]="details.success"
+                  [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+                  </div>
+                  {{details.success }}
+                </div>
+                <p class="mt-4 mb-1" style="font-size: .77rem;">Examination</p>
+                <div class="progress rounded" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" [style.width]="details.examination + '%'" [attr.aria-valuenow]="details.examination"
+                  [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+                  </div>
+                  {{details.examination}}
+                </div>
+                <p class="mt-4 mb-1" style="font-size: .77rem;">Experience</p>
+                <div class="progress rounded" style="height: 20px;">
+                  <div class="progress-bar" role="progressbar" [style.width]="details.experience + '%'" [attr.aria-valuenow]="details.experience"
+                  [attr.aria-valuemin]="0" [attr.aria-valuemax]="100">
+                  </div>
+                  {{details.experience}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

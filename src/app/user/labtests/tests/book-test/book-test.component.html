@@ -1,0 +1,92 @@
+<div class="form-container">
+<mat-card class="booktest">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Lab Test Request Form </mat-card-title>
+    <mat-card-subtitle>Lab Form 96</mat-card-subtitle>
+  </mat-card-header>
+  <div style="overflow: hidden;">
+    <div class="formbox">
+        <h5>Patient Name</h5>
+        <input type="text" [(ngModel)]="fname">*
+    </div>
+    </div>
+    <div style="overflow: hidden;">
+      <div class="formbox">
+          <h5>Patient Age</h5>
+          <input type="number" [(ngModel)]="age">*
+      </div>
+      </div><br>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Date</mat-label>
+        <input matInput [(ngModel)]="date" [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker [dateClass]="dateClass" #picker></mat-datepicker>
+      </mat-form-field><br> 
+      <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Gender</mat-label>
+          <input type="text" [(ngModel)]="gender"
+                 placeholder="Pick gender"
+                 aria-label="textarea"
+                 matInput
+                 [formControl]="myControl"
+                 [matAutocomplete]="auto">
+          <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+              {{option}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+      </form><br>  
+        <div style="overflow: hidden;">
+        <div class="formbox">
+            <h5>Mobile no</h5>
+            <input type="number" [(ngModel)]="mobile">*
+        </div>
+        </div><br> 
+        <div class="formbox">
+          <h5>Email</h5>
+          <input type="email" [(ngModel)]="email">*
+      </div><br>
+      <div class="formbox">
+        <h5>Addressline1</h5>
+        <input type="email" [(ngModel)]="address">*
+    </div><br>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>City</mat-label>
+          <input type="text" matInput [(ngModel)]="city" [matAutocomplete]="automatic">
+          <mat-autocomplete #automatic="matAutocomplete" [displayWith]="displayFn">
+            <mat-option *ngFor="let option of cities | city:city" [value]="option.city">
+              {{option.city}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field><br>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>State</mat-label>
+          <input type="text" matInput [(ngModel)]="state" [matAutocomplete]="automatically">
+          <mat-autocomplete #automatically="matAutocomplete" [displayWith]="displayFn1">
+            <mat-option *ngFor="let option of states | state:state" [value]="option.state">
+              {{option.state}}
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field><br>
+        <div style="overflow: hidden;">
+          <div class="formbox">
+              <h5>PinCode</h5>
+              <input type="number" [(ngModel)]="pincode">*
+          </div>
+          </div><br>
+          <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Test</mat-label>
+            <input type="text" matInput [(ngModel)]="test" [matAutocomplete]="automatically1">
+            <mat-autocomplete #automatically1="matAutocomplete" [displayWith]="displayFn1">
+              <mat-option *ngFor="let option of tests | labtests:test" [value]="option.testname">
+                {{option.testname}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field><br>
+    <div style="margin:30px;"><button class="btn btn-secondary" (click)="submit()">submit</button></div>
+</mat-card>
+</div>

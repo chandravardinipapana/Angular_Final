@@ -1,0 +1,9 @@
+{
+  "menubar1": {
+      "home" : "Home",
+      "patients": "Patients",
+      "viewcomplaints": "ViewComplaints",
+      "logout":"LogOut",
+      "title":"Appointment Booking"
+  }
+}

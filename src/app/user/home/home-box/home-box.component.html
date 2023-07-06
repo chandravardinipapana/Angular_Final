@@ -1,0 +1,15 @@
+<a routerLink="/details/{{doctor.id}}">
+<div class="home-box">
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Dr.{{doctor.name}}</mat-card-title>
+    <mat-card-subtitle>{{doctor.specialization}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-lg-image src="http://localhost/{{doctor.image}}" alt="Photo of a Doctors">
+  <a href="#!">
+    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+  </a>
+</mat-card>
+</div>
+</a>

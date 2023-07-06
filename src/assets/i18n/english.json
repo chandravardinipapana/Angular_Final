@@ -1,0 +1,10 @@
+{
+  "menubar": {
+      "home" : "Home",
+      "medication": "Medication",
+      "labtests":"LabTests",
+      "complaints": "Complaints",
+      "logout":"LogOut",
+      "title":"Appointment Booking"
+  }
+}

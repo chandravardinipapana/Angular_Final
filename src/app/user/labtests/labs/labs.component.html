@@ -1,0 +1,14 @@
+<mat-card class="labs">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Labs</mat-card-title>
+  </mat-card-header>
+  <mat-card-subtitle>Labs</mat-card-subtitle>
+  <mat-card-content>
+    <p>Your tests will be conducted in one of our partner labs to ensure highest accuracy of your reports</p>
+  </mat-card-content>
+  <app-tests *ngFor="let x of testlist" [test]="x"></app-tests>
+  <mat-card-footer>
+  </mat-card-footer>
+</mat-card>
+ 

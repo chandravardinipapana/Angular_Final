@@ -1,0 +1,49 @@
+mat-card.page {
+  background-image: url('http://localhost/page1.jfif');
+  background-size: cover; 
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  color:blue;
+  margin-top: 0;
+  text-align: center;
+  backface-visibility: visible;
+}
+
+h2 {
+  font-size: 24px;
+  color: blue;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p, li {
+    font-size: 14px;
+  }
+}

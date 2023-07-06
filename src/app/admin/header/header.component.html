@@ -1,0 +1,35 @@
+<mat-toolbar class="menu-outline">
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <span>{{"menubar1.title" | translate}} </span>
+  <mat-menu #menu="matMenu">
+    <ul style="list-style: none;">
+      <li routerLinkActive="active">
+        <a mat-menu-item routerLink="./menu">
+          <mat-icon>home</mat-icon>
+          {{"menubar1.home" | translate}}
+        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a mat-menu-item routerLink="./patient">
+          <mat-icon>Patient</mat-icon>
+          {{"menubar1.patients" | translate}}
+        </a>
+      </li>
+      <li routerLinkActive="active">
+        <a mat-menu-item routerLink="./viewcomplaints">
+          <mat-icon>feedback</mat-icon>
+          {{"menubar1.viewcomplaints" | translate}}
+        </a>
+      </li>
+    </ul>
+  </mat-menu>
+  <span [style.marginLeft]="'300px'" [style.color]="'white'">
+    <select [(ngModel)]="lang" (change)="changeLang()" style="width: 100px;height:25px;">
+       <option *ngFor="let x of languages" value={{x.value}}>
+         {{x.name}}</option>
+    </select>
+ </span>
+  <button (click)="logout()" style="background-color: rgb(0, 145, 255); position:relative;left: 250px;color: #fff; padding: 10px 10px; font-size: 16px;cursor: pointer;">{{"menubar1.logout" | translate}}</button>
+</mat-toolbar>

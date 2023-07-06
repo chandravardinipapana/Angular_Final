@@ -1,0 +1,27 @@
+<div id="form"><h1>Add Prescription</h1>
+  <div style="overflow: hidden;">
+      <div class="formbox">
+          <h5>Patient Name</h5>
+          <input type="text" [(ngModel)]="fname">*
+      </div>
+      <div class="formbox">
+          <h5>Email</h5>
+          <input type="email" [(ngModel)]="email">*
+      </div>
+      <div class="formbox">
+        <h5>Age</h5>
+        <input type="number" [(ngModel)]="age">*
+    </div>
+      <div class="formbox">
+          <h5>Message</h5>
+          <textarea [(ngModel)]="message"></textarea>*
+      </div>
+  </div>
+  <div class="alert alert-info" *ngIf="errors.length>0">
+      <ul >
+          <li *ngFor="let x of errors">{{x}}</li>
+      </ul>
+  </div>
+  <div style="margin:30px;"><button class="btn btn-secondary" (click)="submit()">submit</button></div>
+  </div>
+  

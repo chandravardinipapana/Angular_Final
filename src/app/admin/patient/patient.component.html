@@ -1,0 +1,9 @@
+ <mat-card class="form">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Lab Test Request Form </mat-card-title>
+    <mat-card-subtitle>Lab Form 96</mat-card-subtitle>
+  </mat-card-header>
+  <app-labdialog></app-labdialog>
+ </mat-card>
+ <app-patient-box *ngFor="let x of patientlist" [patient]="x"></app-patient-box>
